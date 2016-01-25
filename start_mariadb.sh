@@ -30,7 +30,7 @@ if [ "${MDB1_RUNNING}" != "true" ]; then
 else
 	printf "attempting to create schema and tables"
 	## We need to give MariaDB a moment to start
-	for i in {1..5}; do
+	for i in {1..10}; do
 	    printf "."
 	    sleep 1
 	done
