@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# Just a random password, replace this in production since this password
+# has been on GitHub
 PASSWORD=ccJtyF3dTplyez4v
 
 # Ensure the docker VM is running (Mac OS X)
