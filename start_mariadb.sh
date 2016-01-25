@@ -36,5 +36,5 @@ else
 	## This sucks. We need a mysql client on the IDE's host OS. But doing a docker cp and trying
 	## to load the schema from within the container fails, probably due to TTY or something like.
 	DOCKER_MACHINE=`docker-machine ls default | grep ^default | awk '{print $5}' | cut -d: -f 2 | sed -e 's/^..//'`
-	mysql -h ${DOCKER_MACHINE} --port 3306 -u root --password=${PASSWORD} < ../schema.sql
+	mysql -h ${DOCKER_MACHINE} --port 3306 -u root --password=${PASSWORD} < ./schema.sql
 fi
