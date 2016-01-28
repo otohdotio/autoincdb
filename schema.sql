@@ -14,8 +14,8 @@ USE `otohdotio` ;
 DROP TABLE IF EXISTS `otohdotio`.`certificate` ;
 
 CREATE  TABLE IF NOT EXISTS `otohdotio`.`certificate` (
-  `sn` INT NOT NULL ,
-  `cert_uuid` TEXT NOT NULL ,
+  `sn` INT NOT NULL AUTO_INCREMENT,
+  `uuid` TEXT NOT NULL ,
   PRIMARY KEY (`sn`) )
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
